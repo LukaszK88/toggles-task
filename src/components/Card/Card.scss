@@ -1,0 +1,39 @@
+@import "../../resources/styles/variables";
+@import "../../resources/styles/global";
+
+.card {
+  width: 710px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px 6px rgba(167, 196, 220, 0.5);
+}
+
+.cardIncorrect {
+  @extend .card;
+  background-image: linear-gradient(to bottom, $incorrect-orange-light, $incorrect-orange-dark);
+}
+
+.cardCorrect {
+  @extend .card;
+  background-image: linear-gradient(to bottom, $correct-teal-light, $correct-teal-dark);
+}
+
+.title {
+  @extend .centerBoldText;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 20px 0;
+}
+
+.answerStatus {
+  @extend .centerBoldText;
+  font-size: 14px;
+  color: #ffffff;
+  padding: 16px 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

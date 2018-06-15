@@ -1,0 +1,68 @@
+@import "../../resources/styles/variables";
+@import "../../resources/styles/global";
+
+.toggleContainer {
+  width: 60%;
+  height: 45px;
+  border-radius: 100px;
+  border: solid 1px #fbfbfb;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  @media #{$small-screen} {
+    width: 70%;
+  }
+  @media #{$mobile-screen} {
+    width: 85%;
+  }
+}
+
+.option {
+  @extend .centerBoldText;
+  cursor: pointer;
+  flex:1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 100%;
+  font-size: 14px;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.option.activeOption {
+  color: #4d4d4d;
+}
+
+.active {
+  top:0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  border-radius: 100px;
+  background-color: rgba(249, 249, 249, 0.5);
+  box-shadow: 0 0 6px 1px rgba(195, 51, 51, 0.5);
+  height: 100%;
+}
+
+.active.in {
+  transition: transform 1s cubic-bezier(.18, 1, .22, 1);
+}
+
+.active.out {
+  transition: transform 1s cubic-bezier(.19, 1, .22, 1);
+}
+
+.active.in {
+  transform: translateX(100%);
+}
+
+.active.out {
+  transform: translateX(0%);
+}
