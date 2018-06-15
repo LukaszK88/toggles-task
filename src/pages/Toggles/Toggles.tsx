@@ -4,7 +4,7 @@ import { questionService } from '../../services/question';
 
 const styles = require('./Toggles.scss');
 
-class Toggles extends React.Component {
+export class Toggles extends React.Component {
   render() {
     const question = questionService.getQuestion();
 

@@ -4,12 +4,12 @@ import * as classNames from 'classnames';
 
 const styles = require('./Toggle.scss');
 
-interface ToggleInterface {
+export interface ToggleInterface {
   option:Option;
   selectAnswer:(answer:Answer) => void;
 }
 
-const Toggle: React.SFC<ToggleInterface> = ({
+export const Toggle: React.SFC<ToggleInterface> = ({
   option,
   selectAnswer,
 }) => {
@@ -17,6 +17,7 @@ const Toggle: React.SFC<ToggleInterface> = ({
     <div className={styles.toggleContainer}>
       {option.answers.map((answer:Answer, index:number) => (
         <div
+          key={answer.id}
           onClick={() => (!answer.active ? selectAnswer(answer) : null)}
           className={classNames(
             styles.option,

@@ -25,9 +25,9 @@ class QuestionService {
 
       const updatedAnswers = currentOption.answers.map((answer) => {
         if (answer.id === matchAnswer.id) {
-          return { ...answer, active:1 };
+          return { ...answer, active:true };
         }
-        return { ...answer, active:0 };
+        return { ...answer, active:false };
       });
 
       return previousValue.concat({

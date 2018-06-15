@@ -4,7 +4,7 @@ export interface Question {
 }
 
 export interface Option {
-  id:string;
+  id:number;
   answers:Answer[];
 }
 

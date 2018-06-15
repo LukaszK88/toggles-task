@@ -5,7 +5,7 @@ import { questionService } from '../../services/question';
 
 const styles = require('./Card.scss');
 
-interface CardInterface {
+export interface CardInterface {
   question:Question;
 }
 
@@ -14,7 +14,7 @@ interface CardStateInterface {
   correctAnswers:number;
 }
 
-class Card extends React.Component<CardInterface> {
+export class Card extends React.Component<CardInterface> {
   constructor(props:CardInterface) {
     super(props);
 
