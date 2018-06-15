@@ -1,12 +1,13 @@
 import * as React from 'react';
-import {Card} from "../../components";
+import { Card } from '../../components';
+import { questionService } from '../../services/question';
 
 const styles = require('./Toggles.scss');
 
-const question = require('../../data/questionResponse.json');
-
 class Toggles extends React.Component {
   render() {
+    const question = questionService.getQuestion();
+
     return (
       <div className={styles.container}>
        <Card

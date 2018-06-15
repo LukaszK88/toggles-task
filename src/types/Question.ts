@@ -10,7 +10,7 @@ export interface Option {
 
 export interface Answer {
   id:number;
-  correct:number;
+  correct:boolean;
   title:string;
-  active:number;
+  active:boolean;
 }

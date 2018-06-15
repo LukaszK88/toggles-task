@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Answer, Option} from "../../types";
+import { Answer, Option } from '../../types';
 import * as classNames from 'classnames';
 
 const styles = require('./Toggle.scss');
@@ -11,16 +11,16 @@ interface ToggleInterface {
 
 const Toggle: React.SFC<ToggleInterface> = ({
   option,
-  selectAnswer
+  selectAnswer,
 }) => {
   return (
     <div className={styles.toggleContainer}>
-      {option.answers.map((answer:Answer,index:number) => (
+      {option.answers.map((answer:Answer, index:number) => (
         <div
           onClick={() => (!answer.active ? selectAnswer(answer) : null)}
           className={classNames(
             styles.option,
-            (answer.active ? styles.activeOption : null)
+            (answer.active ? styles.activeOption : null),
             )
           }
         >
@@ -29,13 +29,14 @@ const Toggle: React.SFC<ToggleInterface> = ({
           <div
             className={classNames(
               styles.active,
-              (answer.active ? styles.out : styles.in)
-            )}/>
+              (answer.active ? styles.out : styles.in),
+            )}
+          />
           }
-          </div>
+        </div>
       ))}
     </div>
-  )
+  );
 };
 
 export default Toggle;
