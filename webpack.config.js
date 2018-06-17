@@ -2,7 +2,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const config = {
-    entry:{
+  mode: process.env.NODE_ENV !== 'production' ? 'development' : 'production',
+  entry:{
       globalStyles: ['./src/resources/styles/global.scss'],
       index: ["./src/index.tsx"],
     },

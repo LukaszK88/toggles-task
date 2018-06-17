@@ -2,10 +2,16 @@
 @import "../../resources/styles/global";
 
 .card {
-  width: 710px;
-  padding: 10px;
+  padding: 20px 0;
+  width: 55%;
   border-radius: 8px;
   box-shadow: 0 2px 12px 6px rgba(167, 196, 220, 0.5);
+  @media #{$small-screen} {
+    width: 70%;
+  }
+  @media #{$mobile-screen} {
+    width: 95%;
+  }
 }
 
 .cardIncorrect {
@@ -22,14 +28,14 @@
   @extend .centerBoldText;
   font-size: 16px;
   color: #ffffff;
-  padding: 20px 0;
+  padding: 12px 0;
 }
 
 .answerStatus {
   @extend .centerBoldText;
   font-size: 14px;
   color: #ffffff;
-  padding: 16px 0;
+  padding: 12px 0;
 }
 
 .content {

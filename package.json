@@ -3,21 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@types/classnames": "^2.2.4",
-    "@types/enzyme-adapter-react-16": "^1.0.2",
-    "@types/react": "^16.3.17",
-    "@types/react-dom": "^16.0.6",
     "classnames": "^2.2.6",
-    "css-loader": "^0.28.11",
-    "html-webpack-plugin": "^3.2.0",
-    "node-sass": "^4.9.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "react-scripts": "1.1.4",
-    "sass-loader": "^7.0.3",
-    "style-loader": "^0.21.0",
-    "webpack": "^4.12.0",
-    "webpack-dev-server": "^3.1.4"
+    "react-scripts": "1.1.4"
   },
   "scripts": {
     "start:dev": "webpack-dev-server",
@@ -29,6 +18,10 @@
     "test:watch:coverage": "jest --watch --coverage"
   },
   "devDependencies": {
+    "@types/classnames": "^2.2.4",
+    "@types/enzyme-adapter-react-16": "^1.0.2",
+    "@types/react": "^16.3.17",
+    "@types/react-dom": "^16.0.6",
     "@types/enzyme": "^3.1.10",
     "@types/jest": "^23.1.0",
     "awesome-typescript-loader": "^5.0.0",
@@ -39,11 +32,18 @@
     "jest-cli": "^23.1.0",
     "react-test-renderer": "^16.4.1",
     "source-map-loader": "^0.2.3",
+    "html-webpack-plugin": "^3.2.0",
+    "css-loader": "^0.28.11",
+    "node-sass": "^4.9.0",
     "ts-jest": "^22.4.6",
     "tslint": "^5.10.0",
     "tslint-config-airbnb": "^5.9.2",
     "tslint-react": "^3.6.0",
     "typescript": "^2.9.2",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.12.0",
+    "webpack-dev-server": "^3.1.4",
     "webpack-cli": "^3.0.6"
   },
   "jest": {
