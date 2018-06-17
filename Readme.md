@@ -10,6 +10,7 @@ in your favourite terminal
 ```
 git clone https://github.com/LukaszK88/toggles-task.git
 cd toggles-task
+npm install
 npm run start:dev
 ```
 go to [http://0.0.0.0:8090/](http://0.0.0.0:8090/)
